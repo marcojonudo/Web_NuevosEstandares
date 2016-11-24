@@ -1,0 +1,67 @@
+// -------------------------- */
+// ------- NEO FONTS -------- */
+// -------------------------- */
+
+// FONT STYLES
+.logo-font{
+    font-family: $shrikhand;
+    span{
+        display: block;
+        font-size: $medium-font-size;
+        &.big{
+            font-size: $big-font-size;
+        }
+    }
+}
+.main-font{
+    font-size: $font-size;
+    font-family: $main-font;
+    line-height: $big-line-height;
+    font-weight: $font-weight;
+    letter-spacing: 1px;
+    &.bold{
+        font-family: $bold-font;
+    }
+}
+.title-font{
+    font-size: $bigger-font-size;
+    font-family: $playfair;
+    line-height: $line-height;
+    font-weight: 900;
+}
+.product-font{
+    font-size: $medium-font-size;
+    font-family: $playfair;
+    line-height: $line-height;
+    font-weight: 400;
+}
+.promo-title-font{
+    font-size: $bigger-font-size;
+    font-family: $shrikhand;
+    line-height: $line-height;
+}
+
+.menu-font{
+    text-transform: uppercase;
+    font-size: $medium-font-size;
+    font-family: $book;
+    &.current{
+        font-family: $bold;
+    }
+
+    @include mq(ipad) {
+        font-size: $bigger-font-size;
+    }
+}
+
+// ALIGNMENT
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+// -------------------------- */

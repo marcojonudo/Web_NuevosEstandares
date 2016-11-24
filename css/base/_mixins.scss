@@ -1,0 +1,43 @@
+// -------------------------- */
+// ------- NEO MIXINS ------- */
+// -------------------------- */
+
+@mixin default-transition($duration) {
+    @include transition(all $duration ease-out);
+}
+
+@mixin cubic-transition($duration, $delay: 0s) {
+    @include transition($duration cubic-bezier(.52,.01,.16,1) $delay);
+}
+
+// MEDIA QUERIES
+@mixin mq($query) {
+    $laptop: "(max-width: 1280px)";
+    $ipad: "(max-width: 1024px)";
+    $tablet: "(max-width: 768px)";
+    $mobile: "(max-width: 480px)";
+    $iphone: "(max-width: 320px)";
+
+    @if $query == laptop {
+        @media #{$laptop} { @content; }
+    }
+    @else if $query == ipad {
+        @media #{$ipad} { @content; }
+    }
+    @else if $query == tablet {
+        @media #{$tablet}  { @content; }
+    }
+    @else if $query == tablet-portrait {
+        @media #{$tablet-portrait}  { @content; }
+    }
+    @else if $query == mobile {
+        @media #{$mobile}  { @content; }
+    }
+    @else if $query == iphone {
+        @media #{$iphone}  { @content; }
+    }@else {
+        @media #{$query} { @content; }
+    }
+}
+
+// -------------------------- */

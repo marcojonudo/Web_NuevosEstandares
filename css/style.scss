@@ -1,0 +1,41 @@
+// ---------- BOURBON LIB ---------- */
+@import "bourbon/bourbon";
+
+/* ---------------------------------- */
+/* ----------- BASE CONFIG ---------- */
+/* ---------------------------------- */
+// OUR FUNCTIONS AND MIXINS
+@import "base/functions";
+@import "base/mixins";
+// IMPORT ON TOP BECAUSE OF THE FONTS IMPORTS
+@import "base/typography";
+// DEFAULT reset css
+@import "base/reset";
+// ALL COLORS INVOLVED IN THE WEB
+@import "base/colours";
+
+@import "base/variables";
+@import "base/fonts";
+
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* --------- GENERAL LAYOUTS -------- */
+/* ---------------------------------- */
+// GENERAL GRID
+@import "layout/generic";
+// HEADER
+@import "layout/header";
+//FOOTER
+@import "layout/footer";
+// SIDEBAR
+@import "layout/sidebar";
+
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* ------ PAGE SPECIFIC STYLES ------ */
+/* ---------------------------------- */
+@import "pages/home";
+@import "pages/products";
+/* ---------------------------------- */
