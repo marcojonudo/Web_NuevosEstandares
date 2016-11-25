@@ -6,6 +6,13 @@
             <header>
                 <div class="content">
                     <div class="logo">
+                        <a href="./">
+                            <img src="./img/logo/logo-white.png">
+                            <span class="logo-font">
+                                <span class="big">MIW</span>
+                                <span>Brand</span>
+                            </span>
+                        </a>
                     </div><!-- .logo -->
                     <?php
                         include("main-menu.php");

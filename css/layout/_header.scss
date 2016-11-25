@@ -1,0 +1,31 @@
+.logo {
+	a {
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		color: $main-color;
+	}
+	img {
+		width: 50px;
+		margin: 5px;
+		background-color: $extra-color;
+		border-radius: 100%;
+	}
+}
+
+.mobile {
+	display: none;
+}
+
+.content {
+	background-color: blue;
+}
+
+header {
+	.content {
+		height: 10vh;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
