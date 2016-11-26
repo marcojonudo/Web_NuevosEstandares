@@ -4,7 +4,7 @@
     $metadata_keywords = '';
     $metadata_author = 'MIW Brand';
 
-    $og_main_image = "http://localhost/miw-brand/img/logo/img-share.jpg";
+    $og_main_image = "http://localhost/estandares/img/logo/img-share.jpg";
     $og_images = array(
         $og_main_image
     );

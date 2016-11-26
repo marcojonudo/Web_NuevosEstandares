@@ -1,9 +1,21 @@
-.logo {
+header {
+	width: 100%;
+	.content {
+		height: 10vh;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
 	a {
 		text-decoration: none;
+		color: $main-color;
+	}
+}
+
+.logo {
+	a {
 		display: flex;
 		align-items: center;
-		color: $main-color;
 	}
 	img {
 		width: 50px;
@@ -13,19 +25,16 @@
 	}
 }
 
+nav {
+    font-family: $main-font;
+    font-weight: $font-weight;
+    letter-spacing: 1px;
+	text-transform: uppercase;
+	.menu-item {
+		padding: 10px;
+	}
+}
+
 .mobile {
 	display: none;
-}
-
-.content {
-	background-color: blue;
-}
-
-header {
-	.content {
-		height: 10vh;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-	}
 }
