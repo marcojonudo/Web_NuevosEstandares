@@ -9,9 +9,6 @@
 }
 
 .top {
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: $top-height;
 	background: url(layout/home-back.jpg);
@@ -26,7 +23,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100%;		
+		height: $top-height;		
 		background-color: #000000;
 		opacity: 0.4;
 		z-index: 1;
@@ -66,3 +63,39 @@
 	}
 }
 
+.products {
+	width: 100%;
+	.content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		.product {
+			width: 24%;
+			margin: $gap;
+			display: flex;
+			flex-wrap: wrap;
+			background-color: red;
+			.product-element {
+				width: 100%;
+			}
+			.image {
+				height: 200px;
+				position: relative;
+				img {
+					width: 100%;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			.price {
+				height: 50px;
+			}
+			.buttons {
+				height: 30px;
+			}
+		}
+	}
+}
