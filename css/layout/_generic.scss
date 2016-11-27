@@ -24,18 +24,18 @@
 		left: 0;
 		width: 100%;
 		height: $top-height;		
-		background-color: #000000;
+		background-color: $black;
 		opacity: 0.4;
 		z-index: 1;
 	}
 	.content {
 		width: calc(100% - 15vh);
 		height: calc(100% - 15vh);
-		border: 2px solid #FFFFFF;
+		border: 2px solid $white;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		color: #FFFFFF;
+		color: $white;
 		padding-right: $bigger-gap;
 		z-index: 2;
 		img {
@@ -50,7 +50,7 @@
 			margin-left: $big-gap;
 			.title-brand {
 				font-size: $biggest-font-size;
-				border-bottom: $social-icon-border-width solid #FFFFFF;
+				border-bottom: $social-icon-border-width solid $white;
 				margin-bottom: $small-gap;
 				padding-bottom: $small-gap;
 			}
@@ -75,7 +75,6 @@
 			margin: $gap;
 			display: flex;
 			flex-wrap: wrap;
-			background-color: red;
 			.product-element {
 				width: 100%;
 			}
@@ -88,13 +87,92 @@
 					top: 50%;
 					left: 50%;
 					transform: translate(-50%, -50%);
+					&.secondary {
+						opacity: 0;
+						transition: opacity 0.5s ease-in-out;
+					}
+					&:hover {
+						opacity: 1;
+					}
 				}
+
 			}
 			.price {
-				height: 50px;
+				.original-price {
+					color: $light-gray;
+					text-decoration: line-through;
+				}
+				.actual-price {
+					font-size: $big-font-size;
+				}
 			}
 			.buttons {
-				height: 30px;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				a {
+					position: relative;
+					text-decoration: none;
+					color: $black;
+					padding: $tiny-gap $small-gap;
+					margin: 0 $tiny-gap;
+					border-bottom: $social-icon-border-width solid $extra-color;
+					z-index: 1;
+					&::after {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						transform: scaleY(0);
+						transform-origin: bottom center;
+						background-color: $extra-color;
+						z-index: -1;
+						transition: transform 0.2s cubic-bezier(0.66, 0.05, 0.17, 0.9) 0s;
+					}
+					&:hover {
+						color: $white;
+						transition: transform 0.2s cubic-bezier(0.66, 0.05, 0.17, 0.9) 0s;
+					}
+					&:hover::after {
+						transform: scaleY(1);
+					}
+				}
+			}
+		}
+	}
+	.publi {
+		position: relative;
+		width: 50%;
+		height: 300px;
+		background-color: $extra-color2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.content {
+			width: calc(100% - 10vh);
+			height: calc(100% - 10vh);
+			border: 2px solid $white;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			color: $white;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.logo-font {
+				font-size: $bigger-font-size;
+			}
+			img {
+				width: 75px;
+				position: absolute;
+				bottom: $small-gap;
+				right: $small-gap;
+				background-color: $extra-color;
+				border-radius: 100%;
 			}
 		}
 	}
