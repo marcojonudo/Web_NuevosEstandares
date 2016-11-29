@@ -1,3 +1,8 @@
+a {
+	text-decoration: none;
+	color: $bg-color;
+}
+
 .wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -174,6 +179,22 @@
 				background-color: $extra-color;
 				border-radius: 100%;
 			}
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.products .content {
+		.product, .publi {
+			width: 40%;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.products .content {
+		.product, .publi {
+			width: 90%;
 		}
 	}
 }

@@ -2,6 +2,15 @@
 <html>
     <?php include("head.php"); ?>
     <body>
+    <?php
+      $mysqli = mysqli_connect("localhost:3306", "marco", "marco", "productos");
+            if (mysqli_connect_errno($mysqli)) {
+                echo "Fallo al conectar a MySQL: " . mysqli_connect_error();
+            }
+            else {
+                echo "Todo bien";
+            }
+    ?>
         <div class="wrapper">
             <header>
                 <div class="content">
@@ -21,6 +30,13 @@
             </header>
             <header class="mobile">
                 <div class="logo">
+                    <a href="./">
+                        <img src="./img/logo/logo-white.png">
+                        <span class="logo-font">
+                            <span class="big">MIW</span>
+                            <span>Brand</span>
+                        </span>
+                    </a>
                 </div><!-- .logo -->
                 <div class="menu-button">
                     <span class="bars">

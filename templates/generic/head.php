@@ -31,6 +31,7 @@
 
         <link rel="stylesheet" type="text/css" media="all" href="./css/style.css" />
         <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+        <script src="https://use.fontawesome.com/f125d80d3e.js"></script>
 
         <!-- METRICS -->
         <?php include_once ("metrics/analytics.php"); ?>
