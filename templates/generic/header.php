@@ -2,15 +2,6 @@
 <html>
     <?php include("head.php"); ?>
     <body>
-    <?php
-      $mysqli = mysqli_connect("localhost:3306", "marco", "marco", "productos");
-            if (mysqli_connect_errno($mysqli)) {
-                echo "Fallo al conectar a MySQL: " . mysqli_connect_error();
-            }
-            else {
-                echo "Todo bien";
-            }
-    ?>
         <div class="wrapper">
             <header>
                 <div class="content">

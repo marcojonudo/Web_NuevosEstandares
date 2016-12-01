@@ -1,0 +1,54 @@
+.top {
+	width: 100%;
+	height: $top-height;
+	background: url(home-back.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.lens {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: $top-height;		
+		background-color: $black;
+		opacity: 0.4;
+		z-index: 1;
+	}
+	.content {
+		width: calc(100% - 15vh);
+		height: calc(100% - 15vh);
+		border: 2px solid $white;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		color: $white;
+		padding-right: $bigger-gap;
+		z-index: 2;
+		img {
+			width: 225px;
+			background-color: $extra-color;
+			border-radius: 100%;
+		}
+		.text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-left: $big-gap;
+			.title-brand {
+				font-size: $biggest-font-size;
+				border-bottom: $social-icon-border-width solid $white;
+				margin-bottom: $small-gap;
+				padding-bottom: $small-gap;
+			}
+			.text-brand {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+}
